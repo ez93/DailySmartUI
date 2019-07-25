@@ -5,7 +5,7 @@ import {withRouter} from 'react-router-dom';
 
 class SearchBar extends Component{
 
-    handleFormSubmit = function ({query}){
+    handleFormSubmit = function ({query}) {
         this.props.onSubmit(query);
     }
 
@@ -33,3 +33,5 @@ SearchBar= reduxForm({
 SearchBar= withRouter(SearchBar);
 
 export default SearchBar;
+
+
