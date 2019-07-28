@@ -12,8 +12,9 @@ class Home extends Component {
 
 
   handleSearchBarSubmit (query) {
-    this.props.fetchPostsWithQuery(query) 
-    this.props.history.push('/results');
+    this.props.fetchPostsWithQuery(query, ()=>{
+          this.props.history.push('/results');
+    }) 
 }
   render() {
     return (
