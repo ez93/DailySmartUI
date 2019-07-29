@@ -1,6 +1,6 @@
 .search-bar{
     display: grid;
-    
+
     .search-bar__wrapper {
         display: grid;
         width: 100%;
@@ -44,6 +44,9 @@
 }
 
 .search-bar__results{
+    align-content: start;
+    justify-items: center;
+    
 input{
     font-size: 22px;
     height: 36px;
